@@ -69,6 +69,9 @@ onMounted(() => {
   z-index: 999;
   transition: all 0.3s ease;
 }
+.navbar .btn {
+  border-radius: .75rem 0 .75rem 0;
+}
 .navbar a {
   text-decoration: none;
 }

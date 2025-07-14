@@ -23,9 +23,6 @@
     background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1650&q=80') center/cover no-repeat;
     color: var(--white-color);
     position: relative;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 .hero .overlaping {
