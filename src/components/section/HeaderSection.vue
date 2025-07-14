@@ -27,8 +27,19 @@ onMounted(() => {
       </BaseButton>
       <!-- Logo -->
       <a href="/" class="logo">
-        <img class="width-full desktop-logo" src="https://zems.uk/uploads/brands/logo.png" alt="logo" />
-        <img class="width-full mobile-logo" src="https://zems.uk/uploads/brands/logo-2.png" alt="logo" />
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 21H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M5 21V7C5 6.44772 5.44772 6 6 6H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M19 21V11C19 10.4477 18.5523 10 18 10H15" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" />
+            <path d="M9 6V4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V6" stroke="currentColor"
+              stroke-width="2" />
+            <path d="M9 14H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M9 18H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </div>
+        <span class="logo-text">Prime<span>Estate</span></span>
       </a>
 
       <!-- Navigation Links -->
@@ -69,28 +80,56 @@ onMounted(() => {
   z-index: 999;
   transition: all 0.3s ease;
 }
+
 .navbar .btn {
   border-radius: .75rem 0 .75rem 0;
 }
+
+/* Logo Styles */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  /* color: var(--white-color); */
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  color: var(--alternative-color);
+}
+
+.logo-text span {
+  color: var(--alternative-color);
+}
+
 .navbar a {
   text-decoration: none;
 }
+
 .logo img {
   height: 55px;
   width: auto;
 }
+
 /* logo vissibility hidden/block */
 .logo .desktop-logo {
   display: none;
 }
+
 .logo .mobile-logo {
   height: 55px;
   width: auto;
 }
+
 .nav-links {
   display: flex;
   align-items: center;
 }
+
 .navbar ul {
   list-style: none;
   position: fixed;
@@ -105,11 +144,13 @@ onMounted(() => {
   gap: 1.5rem;
   transition: 0.3s;
 }
+
 .navbar ul.active {
   top: 5rem;
   left: 0;
   color: var(--white-color);
 }
+
 .navbar ul li a {
   position: relative;
   display: inline-block;
@@ -135,6 +176,7 @@ onMounted(() => {
     background-color: transparent;
     padding: 0.75rem 0;
   }
+
   /* Desktop menu hover effects */
   .navbar ul li a::after {
     content: "";
@@ -150,16 +192,20 @@ onMounted(() => {
   .navbar ul li a:hover::after {
     width: 100%;
   }
+
   /* logo vissibility hidden/block */
   .logo .desktop-logo {
     display: block;
   }
+
   .logo .mobile-logo {
     display: none;
   }
+
   .phone-num {
     border-left: 1px solid var(--secondary-color);
   }
+
   /* expand navlinks on desktop  */
   .hamburger {
     display: none;

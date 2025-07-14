@@ -126,8 +126,8 @@ a {
 }
 
 .bg-light {
-  /* background-color: rgb(from var(--primary-color) r g b/ 5%); */
-  background-color: #d4ebff;
+  background-color: rgb(from var(--primary-color) r g b/ 5%);
+  /* background-color: #d4ebff; */
 }
 .bg-lighten{
   background-color: var(--primary-lighten-color);

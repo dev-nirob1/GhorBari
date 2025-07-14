@@ -29,7 +29,7 @@ const properties = [
 ]
 </script>
 <template>
-  <section class="featured-properties">
+  <section class="featured-properties bg-light">
     <div class="container">
       <BaseTitle class="mb-2 text-center">Featured Properties</BaseTitle>
       <div class="medium-2 large-3 gap-2">
