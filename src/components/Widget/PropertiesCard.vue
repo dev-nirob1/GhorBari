@@ -30,7 +30,7 @@ defineProps({
 }
 
 .card-body {
-    padding: .75rem;
+    padding: 1rem;
 }
 .card-body i {
     color: var(--primary-color);

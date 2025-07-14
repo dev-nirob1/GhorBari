@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white statistics">
     <div class="container">
-      <ul class="small-2 larger-4 gap-2 stats-content">
+      <ul class="small-2 larger-3 justify-center gap-2">
         <!-- Properties Listed -->
         <li>
           <i class="fa-solid fa-building fa-2x"></i>
@@ -20,15 +20,6 @@
           </div>
         </li>
 
-        <!-- Professional Agents -->
-        <li>
-          <i class="fa-solid fa-user-tie fa-2x"></i>
-          <div>
-            <h3>100+</h3>
-            <p>Expert Agents</p>
-          </div>
-        </li>
-
         <!-- Years of Experience -->
         <li>
           <i class="fa-solid fa-calendar-check fa-2x"></i>
@@ -41,36 +32,27 @@
     </div>
   </section>
 </template>
-
-<script setup>
-const stats = [
-  { number: "850+", label: "Properties Listed" },
-  { number: "600+", label: "Happy Clients" },
-  { number: "100+", label: "Professional Agents" },
-  { number: "12+", label: "Years of Experience" },
-];
-</script>
-
 <style scoped>
 .statistics {
   padding: 3.75rem 0;
 }
-.statistics .stats-content {
+.statistics ul {
   list-style: none;
   padding: 0;
   height: 100%;
   align-items: center;
 }
-.statistics .stats-content li {
+.statistics ul li {
   display: flex;
   align-items: center;
-  gap: .5rem;
+  justify-content: center;
+  gap: 1rem;
   padding: 2rem .5rem;
   /* background-color: var(--primary-color); */
   border: 1px solid var(--secondary-color);
   border-radius: 2rem 0 2rem 0;
 }
-.statistics .stats-content i {
+.statistics ul i {
   height: 80px;
   width: 80px;
   line-height: 80px;
@@ -79,7 +61,7 @@ const stats = [
   border: 2px dashed var(--secondary-color);
   color: var(--secondary-color);
 }
-.statistics .stats-content p {
+.statistics ul p {
   margin: 0;
 }
 </style>
