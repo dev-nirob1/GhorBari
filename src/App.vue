@@ -11,7 +11,7 @@ import StatisticsSection from './components/section/StatisticsSection.vue';
 <template>
   <HeaderSection />
   <HeroSection/>
-  <HeroSectionTwo />
+  <!-- <HeroSectionTwo /> -->
   <StatisticsSection />
   <FeaturedProperties />
   <FooterSection />

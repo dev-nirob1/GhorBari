@@ -66,7 +66,6 @@ onMounted(() => {
 
         <!-- CTA Buttons -->
         <div class="nav-actions">
-          <a href="/login" class="login-btn">Sign In</a>
           <a href="/list-property" class="cta-btn">List Your Property</a>
         </div>
 
@@ -111,7 +110,7 @@ onMounted(() => {
   left: 0;
   width: 100%;
   z-index: 1000;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
   background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -122,11 +121,6 @@ onMounted(() => {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
 .nav-container {
   display: flex;
@@ -149,7 +143,7 @@ onMounted(() => {
 .logo-icon {
   width: 32px;
   height: 32px;
-  color: var(--secondary-color);
+  color: var(--alternative-color);
 }
 
 .logo-text span {
@@ -238,22 +232,22 @@ onMounted(() => {
 
 .cta-btn {
   padding: 10px 20px;
-  background-color: var(--secondary-color);
+  background-color: var(--alternative-color);
   color: var(--primary-color);
   border-radius: 4px;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
+  border-radius: 1rem 0 1rem 0;
 }
 
 .cta-btn:hover {
-  background-color: var(--primary-light-color);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--secondary-color);
+  color: var(--white-color);
 }
 
 .navbar.scrolled .cta-btn {
-  background-color: var(--primary-light-color);
+  background-color: var(--alternative-color);
   color: var(--primary-color);
 }
 

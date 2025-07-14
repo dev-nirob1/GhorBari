@@ -2,15 +2,15 @@
     <section class="hero">
         <div class="overlaping">
             <div class="content">
-                <SubTitle> <i class="fa-solid fa-home"></i> Your Perfect Home</SubTitle>
+                <SubTitle> <i class="fa-solid fa-home text-secondary"></i> Your Perfect Home</SubTitle>
                 <HeroTitle>Find Real Estate</HeroTitle>
                 <HeroTitle>That Matches You</HeroTitle>
                 <BaseParagraph>
                     Explore premium properties in your favorite neighborhoods with trusted agents.
                 </BaseParagraph>
                 <div class="flex justify-center gap-1">
-                    <BaseButton>Browse Properties</BaseButton>
-                    <BaseButton>Learn More</BaseButton>
+                    <BaseButton class="bg-primary">Browse Properties</BaseButton>
+                    <BaseButton class="bg-secondary">Learn More</BaseButton>
                 </div>
             </div>
         </div>
@@ -23,9 +23,9 @@
     background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1650&q=80') center/cover no-repeat;
     color: var(--white-color);
     position: relative;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .hero .overlaping {
@@ -34,16 +34,25 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgb(from var(--primary-color)r g b / 25%);
+    background: rgb(from var(--primary-color)r g b / 35%);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 6rem;
+
 }
-.content .btn{
-    padding: 1.25rem 2rem;
-    font-size: 1.25rem;
+
+.content .btn {
+    padding: .75rem 1rem;
+    font-size: .75rem;
     color: var(--white-color);
-    border-radius: 1rem 0 1rem 0 ;
-    background-color: var(--primary-color);
+    border-radius: 1rem 0 1rem 0;
+}
+
+@media (min-width: 768px) {
+    .content .btn {
+        padding: 1.25rem 2rem;
+        font-size: 1.25rem;
+    }
 }
 </style>
