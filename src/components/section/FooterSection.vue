@@ -4,7 +4,20 @@
             <!-- Company logo and description -->
             <div class="medium-span-2">
                 <a href="/" class="logo">
-                    <BaseImage image="https://zems.uk/uploads/brands/logo.png" class="width-full" alt="Company Logo" />
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 21H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M5 21V7C5 6.44772 5.44772 6 6 6H9" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                            <path d="M19 21V11C19 10.4477 18.5523 10 18 10H15" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                            <path d="M9 6V4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V6"
+                                stroke="currentColor" stroke-width="2" />
+                            <path d="M9 14H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M9 18H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <span class="logo-text">Prime<span>Estate</span></span>
                 </a>
                 <BaseParagraph>
                     Zems delivers next-generation software solutions, helping startups and enterprises across Ireland
@@ -60,7 +73,7 @@
 
 <style scoped>
 .footer {
-    padding-top: 10rem;
+    padding-top: 5rem;
     background-color: var(--primary-color);
     color: var(--white-color);
 }
@@ -70,8 +83,27 @@
     position: relative;
     padding-bottom: 0.75rem;
 }
+/* Logo Styles */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--white-color);
+}
 
-.footer .logo {
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  color: var(--secondary-color);
+}
+
+.logo-text span {
+  color: var(--primary-light-color);
+}
+/* .footer .logo {
     display: flex;
     align-items: center;
     font-size: 1.5rem;
@@ -81,7 +113,7 @@
 .footer .logo img {
     height: 55px;
     width: auto;
-}
+} */
 
 .social-links {
     display: flex;
@@ -175,13 +207,8 @@
 /* Footer copyright bar*/
 .footer-bottom {
     padding: 1rem;
+    border-top: var(--white-color);
     text-align: center;
-    background-color: rgb(from var(--dark-color)r g b / 50%);
-}
-
-@media (min-width: 992px) {
-    .footer {
-        padding-top: 12rem;
-    }
+    background-color: rgb(from var(--primary-color)r g b / 10%);
 }
 </style>
