@@ -10,7 +10,7 @@
                 </BaseParagraph>
                 <div class="flex justify-center gap-1">
                     <BaseButton class="bg-primary">Browse Properties</BaseButton>
-                    <BaseButton class="bg-secondary">Learn More</BaseButton>
+                    <BaseButton class="bg-alternative">Learn More</BaseButton>
                 </div>
             </div>
         </div>
@@ -47,6 +47,10 @@
     font-size: .75rem;
     color: var(--white-color);
     border-radius: 1rem 0 1rem 0;
+}
+
+.content .bg-alternative.btn {
+    color: black;
 }
 
 @media (min-width: 768px) {
