@@ -1,12 +1,9 @@
 <template>
-  <section class="explore-cities">
+  <section class="explore-cities bg-light">
     <div class="container">
-      <h3 class="section-title">Explore Properties by City</h3>
-      <p class="section-subtitle">
-        Find homes, apartments, and spaces in your favorite cities.
-      </p>
+   <h3 class="title mb-2 text-center">Find Properties Across Top Cities</h3>
 
-      <div class="city-grid">
+      <div class="medium-2 large-3 gap-2">
         <div class="city-card" v-for="(city, index) in cities" :key="index">
           <img :src="city.image" :alt="city.name" />
           <div class="city-name">{{ city.name }}</div>
@@ -46,36 +43,14 @@ const cities = [
 </script>
 <style scoped>
 .explore-cities {
-  padding: 4rem 1rem;
-  background-color: #f3f4f6;
-  text-align: center;
+  padding: 3.75rem 0;
 }
-
-.explore-cities .section-title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #1f2937;
-  margin-bottom: 0.5rem;
-}
-
-.explore-cities .section-subtitle {
-  color: #6b7280;
-  font-size: 1rem;
-  margin-bottom: 2rem;
-}
-
-.city-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
 .city-card {
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 2rem 0 2rem 0;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .city-card img {
@@ -83,21 +58,20 @@ const cities = [
   height: 220px;
   object-fit: cover;
   display: block;
-  transition: transform 0.4s ease;
+  transition: all 0.5s ease;
 }
 
 .city-card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .city-name {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.45);
-  color: white;
+  background: rgb(from var(--secondary-color) r g b / 30%);
+  color: var(--white-color);
   padding: 0.75rem;
-  font-size: 1.1rem;
   font-weight: 600;
   text-align: center;
 }

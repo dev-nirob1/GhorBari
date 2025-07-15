@@ -2,11 +2,11 @@
     <section class="hero">
         <div class="overlaping">
             <div class="content">
-                <SubTitle> <i class="fa-solid fa-home text-secondary"></i> Your Perfect Home</SubTitle>
-                <HeroTitle>Find Real Estate</HeroTitle>
-                <HeroTitle>That Matches You</HeroTitle>
+                <SubTitle> <i class="fa-solid fa-home"></i> Your Perfect Home</SubTitle>
+                <HeroTitle>Your Dream Home Awaits</HeroTitle>
                 <BaseParagraph>
-                    Explore premium properties in your favorite neighborhoods with trusted agents.
+                    Browse top properties in prime locations with guidance from verified agents. Find a place that truly
+                    fits your lifestyle.
                 </BaseParagraph>
                 <div class="flex justify-center gap-1">
                     <BaseButton class="bg-primary">Browse Properties</BaseButton>
@@ -31,12 +31,16 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgb(from var(--primary-color)r g b / 35%);
+    background: linear-gradient(to right, rgb(from var(--primary-color)r g b / 35%), rgb(from var(--primary-color)r g b / 55%), rgb(from var(--primary-color)r g b / 35%));
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 6rem;
 
+}
+
+.content .sub-title i {
+    color: var(--alternative-color);
 }
 
 .content .btn {
@@ -55,5 +59,12 @@
         padding: 1.25rem 2rem;
         font-size: 1.25rem;
     }
+    .content {
+    max-width: 70%;
+}
+
+.content p {
+    font-size: 1.15rem;
+}
 }
 </style>

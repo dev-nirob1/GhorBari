@@ -1,79 +1,72 @@
 <template>
-    <footer class="footer">
-        <div class="container medium-2 large-4 gap-2 pb-2">
-            <!-- Company logo and description -->
-            <div class="medium-span-2">
-                <a href="/" class="logo">
-                    <div class="logo-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 21H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                            <path d="M5 21V7C5 6.44772 5.44772 6 6 6H9" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" />
-                            <path d="M19 21V11C19 10.4477 18.5523 10 18 10H15" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" />
-                            <path d="M9 6V4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V6"
-                                stroke="currentColor" stroke-width="2" />
-                            <path d="M9 14H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                            <path d="M9 18H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                        </svg>
-                    </div>
-                    <span class="logo-text">Prime<span>Estate</span></span>
-                </a>
-                <BaseParagraph>
-                    Zems delivers next-generation software solutions, helping startups and enterprises across Ireland
-                    and beyond
-                    accelerate digital transformation, boost productivity, and scale with confidence.
-                </BaseParagraph>
-                <div class="social-links">
-                    <a href="/"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="/"><i class="fab fa-twitter"></i></a>
-                    <a href="/"><i class="fab fa-github"></i></a>
-                    <a href="/"><i class="fab fa-facebook-f"></i></a>
-                </div>
-            </div>
-            <!-- Company information links -->
-            <div>
-                <SubTitle>Company</SubTitle>
-                <ul class="footer-links">
-                    <ListItem>
-                        <a href="/">About Us</a>
-                    </ListItem>
-                    <ListItem>
-                        <a href="/">Careers</a>
-                    </ListItem>
-                    <ListItem>
-                        <a href="/">Case Studies</a>
-                    </ListItem>
-                    <ListItem>
-                        <a href="/">Privacy Policy</a>
-                    </ListItem>
-                    <ListItem>
-                        <a href="/">Contact Us</a>
-                    </ListItem>
-                </ul>
-            </div>
-            <!-- Newsletter subscription form -->
-            <div>
-                <h5 class="title">Stay Updated</h5>
-                <BaseParagraph>Subscribe to our newsletter for tech insights and company news</BaseParagraph>
-                <form class="subscribe-form">
-                    <InputField type="email" placeholder="Your email address" required />
-                    <BaseButton type="submit">
-                        <i class="fas fa-paper-plane"></i>
-                    </BaseButton>
-                </form>
-            </div>
+   <footer class="footer">
+  <div class="container medium-2 large-4 gap-2 py-2">
+    <!-- Footer logo and social media links -->
+    <div>
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-map-location-dot"></i>
         </div>
-        <!-- Footer bottom copyright with Irish location -->
-        <div class="footer-bottom">
-            <p>© 2025 Zems. All rights reserved. Registered in Ireland.</p>
-        </div>
-    </footer>
+        <span class="logo-text">Ghor<span>Bari</span></span>
+      </a>
+
+      <p>Find your next home with trusted agents and verified listings.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+      </div>
+    </div>
+
+    <!-- Quick navigation links -->
+    <div>
+      <h5 class="title">Quick Links</h5>
+      <ul class="footer-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/properties">All Properties</a></li>
+        <li><a href="/agents">Agents</a></li>
+        <li><a href="/cities">Explore Cities</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- Buying/Selling Information -->
+    <div>
+      <h5 class="title">Helpful Info</h5>
+      <ul class="footer-links">
+        <li><a href="/how-it-works">How It Works</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/terms">Terms of Service</a></li>
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter subscription form -->
+    <div>
+      <h5 class="title">Stay Updated</h5>
+      <p>Subscribe to get the latest property listings and market tips.</p>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Your email address" required />
+        <button class="btn" type="submit">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer bottom copyright -->
+  <div class="footer-bottom">
+    <p>© 2025 GhorBari. All rights reserved.</p>
+  </div>
+</footer>
+
 </template>
 
 <style scoped>
 .footer {
-    padding-top: 5rem;
+    padding-top: 3rem;
     background-color: var(--primary-color);
     color: var(--white-color);
 }
@@ -83,37 +76,27 @@
     position: relative;
     padding-bottom: 0.75rem;
 }
+
 /* Logo Styles */
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: var(--white-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--white-color);
 }
 
 .logo-icon {
-  width: 32px;
-  height: 32px;
-  color: var(--secondary-color);
+    width: 32px;
+    height: 32px;
+    color: var(--alternative-color);
 }
 
 .logo-text span {
-  color: var(--primary-light-color);
+    color: var(--alternative-color);
 }
-/* .footer .logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-
-.footer .logo img {
-    height: 55px;
-    width: auto;
-} */
 
 .social-links {
     display: flex;
@@ -130,10 +113,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--secondary-color);
-    color: var(--white-color);
+    background-color: var(--alternative-color);
+    color: var(--primary-color);
+    border-radius: .5rem 0 .5rem 0;
 }
-
+.footer-links a:hover{
+    color: var(--alternative-color);
+}
 .social-links a:hover i {
     transform: scale(1.2);
     transition: all 0.3s ease;
@@ -144,9 +130,9 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 70px;
+    width: 4rem;
     height: 3px;
-    background-color: var(--white-color);
+    background-color: var(--alternative-color);
 }
 
 .footer ul {
@@ -167,20 +153,10 @@
 }
 
 .footer ul a::before {
-    content: "→";
-    /* color: var(--primary-light-color); */
-    opacity: 0;
-    display: none;
+    content: ">";
+    font-family: monospace;
+    color: var(--alternative-color);
     transition: all 0.3s ease;
-}
-
-.footer ul a:hover {
-    padding-left: 5px;
-}
-
-.footer ul a:hover::before {
-    opacity: 1;
-    display: block;
 }
 
 /* Newsletter form */
@@ -193,22 +169,24 @@
     padding: 0.8rem 1.2rem;
     border: none;
     outline: none;
+    border-radius: 1rem 0 0 0;
     font-size: 0.95rem;
     background-color: var(--white-color);
 }
 
 .subscribe-form .btn {
     padding: 1rem 2rem;
-    background-color: var(--secondary-color);
-    color: var(--white-color);
+    background-color: var(--alternative-color);
+    color: var(--primary-color);
     border: none;
+    border-radius: 0 0 1rem 0;
 }
 
 /* Footer copyright bar*/
 .footer-bottom {
-    padding: 1rem;
+    padding: .5rem;
     border-top: var(--white-color);
     text-align: center;
-    background-color: rgb(from var(--primary-color)r g b / 10%);
+    background-color: rgb(from var(--alternative-color)r g b / 5%);
 }
 </style>
