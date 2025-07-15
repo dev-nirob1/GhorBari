@@ -27,6 +27,7 @@ defineProps({
     overflow: hidden;
     transition: all .5s ease-in-out;
     border-radius: 2.5rem 0 2.5rem 0;
+    background-color: white;
 }
 
 .card-body {

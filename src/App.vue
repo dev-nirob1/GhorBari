@@ -1,4 +1,5 @@
 <script setup>
+import ExploreCity from './components/section/ExploreCity.vue';
 import FeaturedProject from './components/section/FeaturedProject.vue';
 import FeaturedProperties from './components/section/FeaturedProperties.vue';
 import FooterSection from './components/section/FooterSection.vue';
@@ -16,6 +17,7 @@ import TestimonialsSection from './components/section/TestimonialsSection.vue';
   <HeroSection />
   <!-- <HeroSectionTwo /> -->
   <FeaturedProject />
+  <ExploreCity/>
   <StatisticsSection />
   <FeaturedProperties />
   <NewsLetterSection />

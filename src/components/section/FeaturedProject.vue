@@ -1,82 +1,74 @@
 <template>
-    <section class="about-us bg-white">
+    <section class="featured bg-white">
         <div class="container large-2 align-center gap-2">
-
-            <!-- trust-building content -->
+            <!-- Trust-building content -->
             <div>
                 <!-- Section Title -->
-                <h3 class="title">Featured Project</h3>
-                <!-- Section Description -->
+                <h3 class="title">Luxury Duplex in Dhanmondi</h3>
+
                 <p>
-                    We help over 500,000 shoppers save money daily, offering exclusive
-                    deals in more than 70 countries. Our global reach ensures you get
-                    the best discounts, anytime, anywhere.
+                    Discover this modern duplex in Dhanmondi, designed for elegant living with comfort, space, and
+                    privacy in mind.
                 </p>
-                <!-- Feature Icons List -->
-                <ul class="">
+
+                <ul>
                     <li>
-                        <div>
-                            <h5 class="sub-title">DUPLEX FLOOR (LOWER Floor)</h5>
-                            <p>1 Bed, 2 Baths (1 Attached & 1 Common), 1 Ver, Formal Living, Dining, Kitchen with Verand
-                                & Open Terrace.</p>
-                        </div>
+                        <h5 class="sub-title">Lower Floor</h5>
+                        <p>1 Bed, 2 Baths, Living, Dining, Kitchen & Open Terrace</p>
                     </li>
                     <li>
-                        <div>
-                            <h5 class="sub-title">DUPLEX FLOOR (UPPER Floor)</h5>
-                            <p>3 Beds, 3 Baths (2 Attached & 1 Common), 2 Veranda & Family Living</p>
-                        </div>
+                        <h5 class="sub-title">Upper Floor</h5>
+                        <p>3 Beds, 3 Baths, Family Lounge & 2 Balconies</p>
                     </li>
                     <li>
-                        <div>
-                            <h5 class="sub-title">Surmise</h5>
-                            <p>4 Beds, 5 Baths, 3 Verandas, 2 Formal Living, Dining, Kitchen with Veranda and Open
-                                Terrace.</p>
-                        </div>
+                        <h5 class="sub-title">Highlights</h5>
+                        <p>4 Beds, 5 Baths, Private Parking & 24/7 Security</p>
                     </li>
                 </ul>
             </div>
-            <!-- About Image -->
-            <div class="image medium-2 gap-1">
+
+            <div class="image flex gap-1">
                 <div class="flex flex-col gap-1">
-                    <img class="height-full"
-                        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1650&q=80"
-                        alt="image" /><img class="height-full"
-                        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1650&q=80"
-                        alt="image" />
+                    <img src="https://cdn.pixabay.com/photo/2016/11/22/23/38/apartment-1851201_1280.jpg"
+                        alt="Front view" />
                 </div>
                 <div class="flex flex-col gap-1">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1650&q=80"
-                        alt="image" />
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1650&q=80"
-                        alt="image" />
+                    <img src="https://cdn.pixabay.com/photo/2023/12/11/06/21/kitchen-8442907_640.jpg" alt="Kitchen" />
+                    <img src="https://cdn.pixabay.com/photo/2023/12/30/07/31/living-room-8477525_1280.jpg"
+                        alt="Living room" />
                 </div>
             </div>
         </div>
     </section>
 </template>
+
 <style scoped>
-.about-us {
+.featured {
     padding: 3.75rem 0;
 }
 
-.about-us .title {
+.featured .title {
     margin-bottom: 1rem;
 }
 
-.about-us ul {
+.featured ul {
     list-style: none;
     padding: 0;
     margin: 2rem 0;
 }
-
-.about-us ul li {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+.featured ul li {
+    background-color: var(--white-color);
+    border-radius: .75rem;
+    padding: .5rem 0 .5rem 1rem;
+    border-left: 2px solid var(--secondary-color);
+    margin-bottom: 1rem;
+}
+.featured ul li p {
+    margin-top: .5rem;
+    margin-bottom: 0;
 }
 
-.about-us i {
+.featured i {
     font-size: 1.25rem;
     width: fit-content;
     height: fit-content;
@@ -86,14 +78,14 @@
     background-color: var(--primary-color);
 }
 
-.about-us .quote {
+.featured .quote {
     position: relative;
     background-color: rgb(from var(--primary-color) r g b/ 15%);
     width: 100%;
     padding: 1rem 1.5rem;
 }
 
-.about-us .quote::before {
+.featured .quote::before {
     position: absolute;
     content: "";
     top: 0;
@@ -103,17 +95,19 @@
     background: var(--alternative-color);
 }
 
-.about-us .image {
+.featured .image {
     width: 100%;
+    height: 100%;
 }
 
-.about-us .image img {
+.featured .image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
+    object-fit: cover;
 }
 
-.about-us .btn {
+.featured .btn {
     border: 1px solid transparent;
     color: var(--white-color);
     background-color: var(--alternative-color);
