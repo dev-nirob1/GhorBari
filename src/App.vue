@@ -1,4 +1,5 @@
 <script setup>
+import FeaturedProject from './components/section/FeaturedProject.vue';
 import FeaturedProperties from './components/section/FeaturedProperties.vue';
 import FooterSection from './components/section/FooterSection.vue';
 import HeaderSection from './components/section/HeaderSection.vue';
@@ -12,12 +13,13 @@ import TestimonialsSection from './components/section/TestimonialsSection.vue';
 
 <template>
   <HeaderSection />
-  <HeroSection/>
+  <HeroSection />
   <!-- <HeroSectionTwo /> -->
+  <FeaturedProject />
   <StatisticsSection />
   <FeaturedProperties />
-  <NewsLetterSection/>
-  <TestimonialsSection/>
+  <NewsLetterSection />
+  <TestimonialsSection />
   <FooterSection />
 </template>
 
