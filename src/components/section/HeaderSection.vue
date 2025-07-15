@@ -8,9 +8,18 @@ const toggleMenu = () => {
 };
 
 onMounted(() => {
-  const navbar = document.querySelector('.nav-links')
+  const navbar = document.querySelector('.navbar');
+  const navLinks = document.querySelector('.nav-links')
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+      navbar.classList.add('scrolling');
+    } else {
+      navbar.classList.remove('scrolling');
+    }
+  });
   // console.log(navbar.childNodes);
-  navbar.childNodes.forEach(element => {
+  navLinks.childNodes.forEach(element => {
     element.addEventListener('click', () => {
       isMenuOpen.value = false
     })
@@ -72,8 +81,14 @@ onMounted(() => {
   transition: all 0.3s ease;
 }
 
+ .navbar.scrolling {
+  background: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
 .navbar .btn {
   border-radius: .75rem 0 .75rem 0;
+  color: var(--primary-color);
 }
 
 /* Logo Styles */
@@ -128,7 +143,7 @@ onMounted(() => {
   left: -100%;
   width: 80%;
   margin: 0;
-  background: var(--secondary-color);
+  background: var(--primary-color);
   flex-direction: column;
   align-items: flex-start;
   padding: 2rem;

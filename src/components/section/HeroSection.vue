@@ -51,7 +51,7 @@
 }
 
 .content .bg-alternative.btn {
-    color: black;
+    color: var(--primary-color);
 }
 
 @media (min-width: 768px) {
@@ -59,12 +59,13 @@
         padding: 1.25rem 2rem;
         font-size: 1.25rem;
     }
-    .content {
-    max-width: 70%;
-}
 
-.content p {
-    font-size: 1.15rem;
-}
+    .content {
+        max-width: 70%;
+    }
+
+    .content p {
+        font-size: 1.15rem;
+    }
 }
 </style>
