@@ -20,7 +20,7 @@
 .hero {
     min-height: 100vh;
     text-align: center;
-    background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1650&q=80') center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1650&q=80') center/cover no-repeat fixed;
     color: var(--white-color);
     position: relative;
 }
@@ -35,36 +35,45 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 6rem;
-
+    padding: 6rem 1rem 0 1rem;
 }
 
-.content .sub-title i {
+.hero .content .sub-title i {
     color: var(--alternative-color);
 }
 
-.content .btn {
+.hero .content .btn {
     padding: .75rem 1rem;
     font-size: .75rem;
     color: var(--white-color);
     border-radius: 1rem 0 1rem 0;
 }
 
-.content .bg-alternative.btn {
+.hero .content .bg-alternative.btn {
     color: var(--primary-color);
 }
 
+.hero .content .bg-alternative.btn:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.hero .content .bg-primary.btn:hover {
+    color: var(--primary-color);
+    background-color: var(--alternative-color);
+}
+
 @media (min-width: 768px) {
-    .content .btn {
+    .hero .content .btn {
         padding: 1.25rem 2rem;
         font-size: 1.25rem;
     }
 
-    .content {
+    .hero .content {
         max-width: 70%;
     }
 
-    .content p {
+    .hero .content p {
         font-size: 1.15rem;
     }
 }
