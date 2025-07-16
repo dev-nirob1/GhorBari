@@ -1,41 +1,37 @@
 <template>
     <section class="featured bg-white">
         <div class="container large-2 align-center gap-2">
-            <!-- Trust-building content -->
             <div>
-                <!-- Section Title -->
-                <h3 class="title">Luxury Duplex in Dhanmondi</h3>
-
-                <p>
+                <BaseTitle class="mb-1">Luxury Duplex in Dhanmondi</BaseTitle>
+                <BaseParagraph>
                     Discover this modern duplex in Dhanmondi, designed for elegant living with comfort, space, and
                     privacy in mind.
-                </p>
-
+                </BaseParagraph>
                 <ul>
-                    <li>
-                        <h5 class="sub-title">Lower Floor</h5>
-                        <p>1 Bed, 2 Baths, Living, Dining, Kitchen & Open Terrace</p>
-                    </li>
-                    <li>
-                        <h5 class="sub-title">Upper Floor</h5>
-                        <p>3 Beds, 3 Baths, Family Lounge & 2 Balconies</p>
-                    </li>
-                    <li>
-                        <h5 class="sub-title">Highlights</h5>
-                        <p>4 Beds, 5 Baths, Private Parking & 24/7 Security</p>
-                    </li>
+                    <ListItem>
+                        <SubTitle>Lower Floor</SubTitle>
+                        <BaseParagraph>1 Bed, 2 Baths, Living, Dining, Kitchen & Open Terrace</BaseParagraph>
+                    </ListItem>
+                    <ListItem>
+                        <SubTitle>Upper Floor</SubTitle>
+                        <BaseParagraph>3 Beds, 3 Baths, Family Lounge & 2 Balconies</BaseParagraph>
+                    </ListItem>
+                    <ListItem>
+                        <SubTitle>Highlights</SubTitle>
+                        <BaseParagraph>4 Beds, 5 Baths, Private Parking & 24/7 Security</BaseParagraph>
+                    </ListItem>
                 </ul>
             </div>
 
-            <div class="image flex gap-1">
-                <div class="flex flex-col gap-1">
-                    <img src="https://cdn.pixabay.com/photo/2016/11/22/23/38/apartment-1851201_1280.jpg"
-                        alt="Front view" />
-                </div>
-                <div class="flex flex-col gap-1">
-                    <img src="https://cdn.pixabay.com/photo/2023/12/11/06/21/kitchen-8442907_640.jpg" alt="Kitchen" />
-                    <img src="https://cdn.pixabay.com/photo/2023/12/30/07/31/living-room-8477525_1280.jpg"
+            <div class="image-container flex gap-1">
+                 <div class="flex flex-col gap-1">
+                    <BaseImage image="https://cdn.pixabay.com/photo/2023/12/11/06/21/kitchen-8442907_640.jpg" alt="Kitchen" />
+                    <BaseImage image="https://cdn.pixabay.com/photo/2023/12/30/07/31/living-room-8477525_1280.jpg"
                         alt="Living room" />
+                </div>
+                <div>
+                    <BaseImage image="https://cdn.pixabay.com/photo/2016/11/22/23/38/apartment-1851201_1280.jpg"
+                        alt="Front view" />
                 </div>
             </div>
         </div>
@@ -46,11 +42,6 @@
 .featured {
     padding: 3.75rem 0;
 }
-
-.featured .title {
-    margin-bottom: 1rem;
-}
-
 .featured ul {
     list-style: none;
     padding: 0;
@@ -68,50 +59,16 @@
     margin-bottom: 0;
 }
 
-.featured i {
-    font-size: 1.25rem;
-    width: fit-content;
-    height: fit-content;
-    padding: 0.75rem;
-    border-radius: 50%;
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
-}
-
-.featured .quote {
-    position: relative;
-    background-color: rgb(from var(--primary-color) r g b/ 15%);
-    width: 100%;
-    padding: 1rem 1.5rem;
-}
-
-.featured .quote::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 5px;
-    background: var(--alternative-color);
-}
-
-.featured .image {
+.featured .image-container {
     width: 100%;
     height: 100%;
 }
 
-.featured .image img {
+.featured .image-container img {
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
 }
 
-.featured .btn {
-    border: 1px solid transparent;
-    color: var(--white-color);
-    background-color: var(--alternative-color);
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-}
 </style>

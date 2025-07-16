@@ -2,14 +2,14 @@
     <section class="hero">
         <div class="overlaping">
             <div class="content">
-                <SubTitle> <i class="fa-solid fa-home"></i> Your Perfect Home</SubTitle>
+                <SubTitle class="text-secondary"> <i class="fa-solid fa-home"></i> Your Perfect Home</SubTitle>
                 <HeroTitle>Your Dream Home Awaits</HeroTitle>
                 <BaseParagraph>
                     Browse top properties in prime locations with guidance from verified agents. Find a place that truly
                     fits your lifestyle.
                 </BaseParagraph>
                 <div class="flex justify-center gap-1">
-                    <BaseButton class="bg-primary">Browse Properties</BaseButton>
+                    <BaseButton class="bg-secondary">Browse Properties</BaseButton>
                     <BaseButton class="bg-alternative">Learn More</BaseButton>
                 </div>
             </div>
@@ -24,22 +24,21 @@
     color: var(--white-color);
     position: relative;
 }
-
 .hero .overlaping {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgb(from var(--primary-color)r g b / 35%), rgb(from var(--primary-color)r g b / 65%), rgb(from var(--primary-color)r g b / 35%));
+    background: linear-gradient(to right, rgb(from var(--primary-color)r g b / 35%), rgb(from var(--primary-color)r g b / 85%), rgb(from var(--primary-color)r g b / 35%));
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 6rem 1rem 0 1rem;
 }
 
-.hero .content .sub-title i {
-    color: var(--alternative-color);
+.hero .content p {
+    margin: .75rem 0;
 }
 
 .hero .content .btn {
@@ -58,7 +57,7 @@
     background-color: var(--primary-color);
 }
 
-.hero .content .bg-primary.btn:hover {
+.hero .content .bg-secondary.btn:hover {
     color: var(--primary-color);
     background-color: var(--alternative-color);
 }
@@ -75,6 +74,7 @@
 
     .hero .content p {
         font-size: 1.15rem;
+        margin: .75rem 0;
     }
 }
 </style>
