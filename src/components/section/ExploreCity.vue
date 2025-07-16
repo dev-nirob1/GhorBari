@@ -1,18 +1,3 @@
-<template>
-  <section class="explore-cities bg-light">
-    <div class="container">
-   <h3 class="title mb-2 text-center">Find Properties Across Top Cities</h3>
-
-      <div class="medium-2 large-3 gap-2">
-        <div class="city-card" v-for="(city, index) in cities" :key="index">
-          <img :src="city.image" :alt="city.name" />
-          <div class="city-name">{{ city.name }}</div>
-        </div>
-      </div>
-    </div>
-  </section>
-</template>
-
 <script setup>
 const cities = [
   {
@@ -41,16 +26,45 @@ const cities = [
   },
 ];
 </script>
+<template>
+      <!-- ======== Explore cities section ======== -->
+  <section id="cities" class="explore-cities bg-light">
+    <div class="container">
+      <BaseTitle class="text-center mb-2">Find Properties Across Top Cities</BaseTitle>
+
+      <div class="medium-2 large-3 gap-2">
+              <!-- ======== Explore cities card ======== -->
+        <div class="city-card" v-for="(city, index) in cities" :key="index">
+          <BaseImage :image="city.image" :alt="city.name" />
+          <div class="city-name">{{ city.name }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
 <style scoped>
 .explore-cities {
   padding: 3.75rem 0;
 }
+
 .city-card {
   position: relative;
   overflow: hidden;
-  border-radius: 2rem 0 2rem 0;
+  border-radius: 2rem 0;
   cursor: pointer;
   transition: all 0.5s ease;
+}
+
+.city-name {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgb(from var(--secondary-color) r g b / 40%);
+  color: var(--white-color);
+  padding: 0.75rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 .city-card img {
@@ -63,16 +77,5 @@ const cities = [
 
 .city-card:hover img {
   transform: scale(1.1);
-}
-
-.city-name {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgb(from var(--secondary-color) r g b / 30%);
-  color: var(--white-color);
-  padding: 0.75rem;
-  font-weight: 600;
-  text-align: center;
 }
 </style>

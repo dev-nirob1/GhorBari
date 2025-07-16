@@ -18,6 +18,7 @@ const reviews = ref([
 </script>
 
 <template>
+    <!-- ======== testimonials section ======== -->
     <section class="testimonials bg-light">
         <div class="container">
             <div class="mb-2">
@@ -25,6 +26,7 @@ const reviews = ref([
             </div>
 
             <div class="medium-2 gap-2">
+                <!-- individual testimonials card  -->
                 <TestimonialCard v-for="(review, i) in reviews" :key="i" :review="review" />
             </div>
         </div>
@@ -33,20 +35,5 @@ const reviews = ref([
 <style scoped>
 .testimonials {
     padding: 3.75rem 0;
-}
-
-.testimonials .sub-title {
-    white-space: nowrap;
-}
-
-.testimonials .btn {
-    padding: .5rem;
-    white-space: nowrap;
-}
-
-@media (min-width: 768px) {
-    .testimonials .btn {
-        padding: .75rem 1rem;
-    }
 }
 </style>

@@ -28,6 +28,7 @@ onMounted(() => {
 </script>
 
 <template>
+  <!-- ======== Navbar section ======== -->
   <header class="navbar">
     <nav class="flex justify-between align-center gap-1 container">
       <!-- Mobile Menu Toggle Button -->
@@ -111,10 +112,12 @@ onMounted(() => {
 .navbar a {
   text-decoration: none;
 }
+
 .navbar ul {
   display: flex;
   align-items: center;
 }
+
 .navbar ul {
   list-style: none;
   position: fixed;
@@ -202,7 +205,8 @@ onMounted(() => {
   .hamburger {
     display: none;
   }
-/* cta button hidden/vissible */
+
+  /* cta button hidden/vissible */
   .btn-desktop {
     display: block;
   }

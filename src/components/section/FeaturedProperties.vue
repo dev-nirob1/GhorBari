@@ -54,11 +54,13 @@ const properties = [
 
 </script>
 <template>
+      <!-- ======== Featured Properties section ======== -->
   <section class="featured-properties bg-light">
     <div class="container">
       <BaseTitle class="mb-2 text-center">Featured Properties</BaseTitle>
       <div class="medium-2 large-3 gap-2">
-        <PropertiesCard v-for="(data, i) in properties" :key="i" :data="data"></PropertiesCard>
+        <!-- ===== individual property card =======  -->
+        <PropertiesCard v-for="(data, i) in properties" :key="i" :data="data"/>
       </div>
     </div>
   </section>

@@ -1,4 +1,5 @@
 <template>
+                  <!-- ======== Hero section ======== -->
     <section class="hero">
         <div class="overlaping">
             <div class="content">

@@ -1,4 +1,5 @@
 <template>
+      <!-- ======== Footer section ======== -->
    <footer class="footer">
   <div class="container medium-2 large-4 gap-2 py-2">
     <!-- Footer logo and social media links -->
@@ -78,7 +79,7 @@
 }
 
 /* Logo Styles */
-.logo {
+.footer .logo {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -88,23 +89,23 @@
     color: var(--white-color);
 }
 
-.logo-icon {
+.footer .logo-icon {
     width: 32px;
     height: 32px;
     color: var(--alternative-color);
 }
 
-.logo-text span {
+.footer .logo-text span {
     color: var(--alternative-color);
 }
 
-.social-links {
+.footer .social-links {
     display: flex;
     gap: 1rem;
 }
 
 /* Social links with hover effects */
-.social-links a {
+.footer .social-links a {
     display: inline-block;
     text-decoration: none;
     font-size: 1.25rem;
@@ -117,10 +118,10 @@
     color: var(--primary-color);
     border-radius: .5rem 0 .5rem 0;
 }
-.footer-links a:hover{
+.footer .footer-links a:hover{
     color: var(--alternative-color);
 }
-.social-links a:hover i {
+.footer .social-links a:hover i {
     transform: scale(1.2);
     transition: all 0.3s ease;
 }
@@ -160,11 +161,11 @@
 }
 
 /* Newsletter form */
-.subscribe-form {
+.footer .subscribe-form {
     display: flex;
 }
 
-.subscribe-form input {
+.footer .subscribe-form input {
     flex: 1;
     padding: 0.8rem 1.2rem;
     border: none;
@@ -174,7 +175,7 @@
     background-color: var(--white-color);
 }
 
-.subscribe-form .btn {
+.footer .subscribe-form .btn {
     padding: 1rem 2rem;
     background-color: var(--alternative-color);
     color: var(--primary-color);
@@ -183,7 +184,7 @@
 }
 
 /* Footer copyright bar*/
-.footer-bottom {
+.footer .footer-bottom {
     padding: .5rem;
     border-top: var(--white-color);
     text-align: center;

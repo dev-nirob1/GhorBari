@@ -32,15 +32,14 @@ defineProps({
   padding: 2rem 1.5rem;
   background: var(--white-color);
   box-shadow: var(--box-shadow);
-  scroll-snap-align: start;
-  border-radius: 3rem 0 3rem 0;
+  border-radius: 3rem 0;
 }
 
 .testimonial-card img {
   height: 4rem;
   width: 4rem;
   object-fit: cover;
-  border-radius: 1rem 0 1rem 0;
+  border-radius: 1rem 0;
 }
 
 .bg-graphic {
@@ -50,14 +49,11 @@ defineProps({
   opacity: .1;
 }
 
-
 @media (min-width: 992px) {
-
   .testimonial-card p,
   .testimonial-card span {
     font-size: 1.15rem;
   }
-
   .bg-graphic {
     right: 2rem;
     bottom: 0;

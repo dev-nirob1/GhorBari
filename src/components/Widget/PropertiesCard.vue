@@ -9,12 +9,12 @@ defineProps({
             <BaseImage class="image-responsive" :image="data.image" alt="image" />
         </div>
         <div class="card-body">
-            <BaseParagraph><i class="fa-solid fa-location-dot"></i>{{ data.location }}</BaseParagraph>
+            <BaseParagraph><i class="fa-solid fa-location-dot"></i> {{ data.location }}</BaseParagraph>
             <SubTitle>{{ data.title }}</SubTitle>
             <ul>
                 <ListItem><i class="fa-solid fa-bed"></i> {{ data.bedrooms }} bed</ListItem>
                 <ListItem><i class="fa-solid fa-bath"></i> {{ data.bathrooms }} bath</ListItem>
-                <ListItem><i class="fa-solid fa-maximize"></i> {{ area }}sqft</ListItem>
+                <ListItem><i class="fa-solid fa-maximize"></i> {{ area }} sqft</ListItem>
             </ul>
             <BaseButton>View Details</BaseButton>
         </div>
@@ -26,10 +26,9 @@ defineProps({
     box-shadow: var(--box-shadow);
     overflow: hidden;
     transition: all .5s ease-in-out;
-    border-radius: 2.5rem 0 2.5rem 0;
-    background-color: white;
+    border-radius: 2.5rem 0;
+    background-color: var(--white-color);
 }
-
 .card-body {
     padding: 1rem;
 }
@@ -63,7 +62,11 @@ defineProps({
 .properties-card .btn {
     background-color: var(--primary-color);
     color: var(--white-color);
-    border-radius: 1rem 0 1rem 0;
+    border-radius: 1rem 0;
     width: 100%;
+}
+.properties-card .btn:hover {
+    background-color: var(--alternative-color);
+    color: var(--primary-color);
 }
 </style>

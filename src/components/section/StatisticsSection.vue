@@ -1,33 +1,34 @@
 <template>
+      <!-- ======== Statistics section ======== -->
   <section class="bg-white statistics">
     <div class="container">
-      <ul class="small-2 larger-3 justify-center gap-2">
+      <ul class="small-2 larger-3 justify-center align-center gap-2">
         <!-- Properties Listed -->
-        <li>
+        <ListItem>
           <i class="fa-solid fa-building fa-2x"></i>
           <div>
-            <h3>850+</h3>
-            <p>Properties Listed</p>
+            <BaseTitle>850+</BaseTitle>
+            <BaseParagraph>Properties Listed</BaseParagraph>
           </div>
-        </li>
+        </ListItem>
 
         <!-- Happy Clients -->
-        <li>
+        <ListItem>
           <i class="fa-solid fa-user-check fa-2x"></i>
           <div>
-            <h3>600+</h3>
-            <p>Happy Clients</p>
+            <BaseTitle>600+</BaseTitle>
+            <BaseParagraph>Happy Clients</BaseParagraph>
           </div>
-        </li>
+        </ListItem>
 
         <!-- Years of Experience -->
-        <li>
+        <ListItem>
           <i class="fa-solid fa-calendar-check fa-2x"></i>
           <div>
-            <h3>12+</h3>
-            <p>Years of Excellence</p>
+            <BaseTitle>12+</BaseTitle>
+            <BaseParagraph>Years of Excellence</BaseParagraph>
           </div>
-        </li>
+        </ListItem>
       </ul>
     </div>
   </section>
@@ -39,8 +40,6 @@
 .statistics ul {
   list-style: none;
   padding: 0;
-  height: 100%;
-  align-items: center;
 }
 .statistics ul li {
   display: flex;
@@ -48,9 +47,8 @@
   justify-content: center;
   gap: 1rem;
   padding: 2rem .5rem;
-  /* background-color: var(--primary-color); */
   border: 1px solid var(--secondary-color);
-  border-radius: 2rem 0 2rem 0;
+  border-radius: 2rem 0;
 }
 .statistics ul i {
   height: 80px;
@@ -58,7 +56,7 @@
   line-height: 80px;
   text-align: center;
   border-radius: 50%;
-  border: 2px dashed var(--secondary-color);
+  border: 1px dashed var(--secondary-color);
   color: var(--secondary-color);
 }
 .statistics ul p {

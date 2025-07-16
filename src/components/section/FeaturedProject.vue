@@ -1,6 +1,8 @@
 <template>
-    <section class="featured bg-white">
+          <!-- ======== Featured Project section ======== -->
+    <section id="featured" class="featured bg-white">
         <div class="container large-2 align-center gap-2">
+                  <!-- ======== Porject information section ======== -->
             <div>
                 <BaseTitle class="mb-1">Luxury Duplex in Dhanmondi</BaseTitle>
                 <BaseParagraph>
@@ -23,9 +25,11 @@
                 </ul>
             </div>
 
+                  <!-- ======== Porject images section ======== -->
             <div class="image-container flex gap-1">
-                 <div class="flex flex-col gap-1">
-                    <BaseImage image="https://cdn.pixabay.com/photo/2023/12/11/06/21/kitchen-8442907_640.jpg" alt="Kitchen" />
+                <div class="flex flex-col gap-1">
+                    <BaseImage image="https://cdn.pixabay.com/photo/2023/12/11/06/21/kitchen-8442907_640.jpg"
+                        alt="Kitchen" />
                     <BaseImage image="https://cdn.pixabay.com/photo/2023/12/30/07/31/living-room-8477525_1280.jpg"
                         alt="Living room" />
                 </div>
@@ -42,11 +46,13 @@
 .featured {
     padding: 3.75rem 0;
 }
+
 .featured ul {
     list-style: none;
     padding: 0;
     margin: 2rem 0;
 }
+
 .featured ul li {
     background-color: var(--white-color);
     border-radius: .75rem;
@@ -54,6 +60,7 @@
     border-left: 2px solid var(--secondary-color);
     margin-bottom: 1rem;
 }
+
 .featured ul li p {
     margin-top: .5rem;
     margin-bottom: 0;
@@ -70,5 +77,4 @@
     display: block;
     object-fit: cover;
 }
-
 </style>
