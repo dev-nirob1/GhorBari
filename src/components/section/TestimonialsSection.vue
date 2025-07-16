@@ -19,7 +19,7 @@ const reviews = ref([
 
 <template>
     <!-- ======== testimonials section ======== -->
-    <section class="testimonials bg-light">
+    <section id="testimonials" class="testimonials bg-light">
         <div class="container">
             <div class="mb-2">
                 <BaseTitle class="text-center">What Our Clients Say</BaseTitle>
