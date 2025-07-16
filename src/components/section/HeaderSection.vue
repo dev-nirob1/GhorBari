@@ -29,7 +29,7 @@ onMounted(() => {
 
 <template>
   <header class="navbar">
-    <nav class="flex justify-between align-center container">
+    <nav class="flex justify-between align-center gap-1 container">
       <!-- Mobile Menu Toggle Button -->
       <BaseButton class="hamburger" @click="toggleMenu">
         <i :class="isMenuOpen ? 'fas fa-xmark' : 'fas fa-bars'" class="fa-2xl"></i>
@@ -41,33 +41,41 @@ onMounted(() => {
         </div>
         <span class="logo-text">Ghor<span>Bari</span></span>
       </a>
-
       <!-- Navigation Links -->
-      <div class="flex align-center gap-1">
-        <ul class="nav-links" :class="{ 'active': isMenuOpen }">
-          <ListItem>
-            <a href="#">Home</a>
-          </ListItem>
-          <ListItem>
-            <a href="#about">About</a>
-          </ListItem>
-          <ListItem>
-            <a href="#services">Services</a>
-          </ListItem>
-          <ListItem>
-            <a href="#blogs">Blogs</a>
-          </ListItem>
-          <ListItem>
-            <a href="#testimonials">Gallery</a>
-          </ListItem>
-        </ul>
-      </div>
-      <BaseButton class="bg-alternative">List Your Property</BaseButton>
+      <ul :class="{ 'active': isMenuOpen }">
+        <ListItem>
+          <a href="#">Home</a>
+        </ListItem>
+        <ListItem>
+          <a href="#featured">Featured</a>
+        </ListItem>
+        <ListItem>
+          <a href="#cities">Explore Cities</a>
+        </ListItem>
+        <ListItem>
+          <a href="#properties">Properties</a>
+        </ListItem>
+        <ListItem>
+          <a href="#testimonials">Testimonials</a>
+        </ListItem>
+
+        <ListItem class="btn-mobile">
+          <BaseButton class="bg-alternative">List Your Property</BaseButton>
+        </ListItem>
+      </ul>
+      <!-- Button to start property listing process -->
+      <BaseButton class="btn-desktop bg-alternative">List Your Property</BaseButton>
     </nav>
   </header>
 </template>
 
 <style scoped>
+/* background-color change on animation  */
+.navbar.scrolling {
+  background: var(--primary-color);
+  transition: background-color 0.3s ease;
+}
+
 .navbar {
   backdrop-filter: blur(50px);
   color: var(--white-color);
@@ -78,25 +86,13 @@ onMounted(() => {
   left: 0;
   width: 100%;
   z-index: 999;
-  transition: all 0.3s ease;
-}
-
- .navbar.scrolling {
-  background: var(--primary-color);
-  transition: all 0.3s ease;
-}
-
-.navbar .btn {
-  border-radius: .75rem 0 .75rem 0;
-  color: var(--primary-color);
 }
 
 /* Logo Styles */
 .logo {
   display: flex;
   align-items: center;
-  gap: .5rem;
-  text-decoration: none;
+  gap: .25rem;
   font-weight: 700;
   font-size: 1.5rem;
   margin: 0;
@@ -115,31 +111,14 @@ onMounted(() => {
 .navbar a {
   text-decoration: none;
 }
-
-.logo img {
-  height: 55px;
-  width: auto;
-}
-
-/* logo vissibility hidden/block */
-.logo .desktop-logo {
-  display: none;
-}
-
-.logo .mobile-logo {
-  height: 55px;
-  width: auto;
-}
-
-.nav-links {
+.navbar ul {
   display: flex;
   align-items: center;
 }
-
 .navbar ul {
   list-style: none;
   position: fixed;
-  top: -100%;
+  top: 5.25rem;
   left: -100%;
   width: 80%;
   margin: 0;
@@ -148,11 +127,11 @@ onMounted(() => {
   align-items: flex-start;
   padding: 2rem;
   gap: 1.5rem;
-  transition: 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar ul.active {
-  top: 5rem;
+  top: 5.25rem;
   left: 0;
   color: var(--white-color);
 }
@@ -165,20 +144,40 @@ onMounted(() => {
   padding: 0.5rem 0;
 }
 
+.navbar .btn {
+  border-radius: .75rem 0 .75rem 0;
+  color: var(--primary-color);
+  white-space: nowrap
+}
+
 /* Mobile menu toggle */
 .hamburger {
   display: block;
-  color: var(--white-color);
+  color: var(--white-color) !important;
   border: none;
   cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (min-width: 992px) {
+/* cta button hidden/vissible */
+.btn-desktop {
+  display: none;
+}
+
+.btn-mobile {
+  display: block;
+}
+
+@media (min-width: 768px) {
   .navbar ul {
     position: inherit;
     width: 100%;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
     background-color: transparent;
     padding: 0.75rem 0;
   }
@@ -191,7 +190,7 @@ onMounted(() => {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--secondary-color);
+    background: var(--alternative-color);
     transition: width 0.3s ease;
   }
 
@@ -199,21 +198,16 @@ onMounted(() => {
     width: 100%;
   }
 
-  /* logo vissibility hidden/block */
-  .logo .desktop-logo {
+  /* expand navlinks on desktop  */
+  .hamburger {
+    display: none;
+  }
+/* cta button hidden/vissible */
+  .btn-desktop {
     display: block;
   }
 
-  .logo .mobile-logo {
-    display: none;
-  }
-
-  .phone-num {
-    border-left: 1px solid var(--secondary-color);
-  }
-
-  /* expand navlinks on desktop  */
-  .hamburger {
+  .btn-mobile {
     display: none;
   }
 }

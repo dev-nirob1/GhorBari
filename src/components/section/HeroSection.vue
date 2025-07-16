@@ -31,7 +31,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgb(from var(--primary-color)r g b / 35%), rgb(from var(--primary-color)r g b / 55%), rgb(from var(--primary-color)r g b / 35%));
+    background: linear-gradient(to right, rgb(from var(--primary-color)r g b / 35%), rgb(from var(--primary-color)r g b / 65%), rgb(from var(--primary-color)r g b / 35%));
     display: flex;
     justify-content: center;
     align-items: center;
