@@ -53,9 +53,7 @@ defineProps({
     transform: scale(1.1);
 }
 .properties-card ul {
-    padding: 0;
     margin: .5rem 0;
-    list-style: none;
     display: flex;
     gap: 1rem;
 }

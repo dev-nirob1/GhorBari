@@ -37,10 +37,7 @@
 .statistics {
   padding: 3.75rem 0;
 }
-.statistics ul {
-  list-style: none;
-  padding: 0;
-}
+
 .statistics ul li {
   display: flex;
   align-items: center;

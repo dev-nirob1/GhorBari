@@ -35,7 +35,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6rem 1rem 0 1rem;
+    padding-top: 6rem;
 }
 
 .hero .content p {

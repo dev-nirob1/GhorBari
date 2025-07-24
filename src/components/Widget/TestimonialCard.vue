@@ -54,9 +54,5 @@ defineProps({
   .testimonial-card span {
     font-size: 1.15rem;
   }
-  .bg-graphic {
-    right: 2rem;
-    bottom: 0;
-  }
 }
 </style>
