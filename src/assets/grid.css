@@ -604,12 +604,6 @@
   --pr: 5rem;
 }
 
-/* Background  */
-/* .bg-primary{background-color: var(--primary-color);}
-.bg-secondary{background-color: var(--secondary-color);}
-.bg-light{background-color: var(--light-color);}
-.bg-dark{background-color: var(--dark-color);} */
-
 .d-block {
   display: block !important;
   width: 100%;

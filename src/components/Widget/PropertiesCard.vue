@@ -64,7 +64,7 @@ defineProps({
     width: 100%;
 }
 .properties-card .btn:hover {
-    background-color: var(--alternative-color);
+    background-color: var(--secondary-color);
     color: var(--primary-color);
 }
 </style>

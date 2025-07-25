@@ -28,7 +28,8 @@
 }
 
 .news-letter .subscribe-form input {
-    border-color: var(--alternative-color);
+    color: var(--white-color);
+    border-color: var(--secondary-color);
     outline: none;
     padding: 1.15rem;
     border-radius: 1rem 0 0 0;
@@ -41,7 +42,7 @@
 }
 
 .news-letter .subscribe-form .btn {
-    background-color: var(--alternative-color);
+    background-color: var(--secondary-color);
     font-weight: 500;
     border-radius: 0 0 1rem 0;
     padding: 1rem;

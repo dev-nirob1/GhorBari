@@ -65,7 +65,7 @@ onMounted(() => {
         </ListItem>
       </ul>
       <!-- Button to start property listing process -->
-      <BaseButton class="btn-desktop bg-alternative">List Your Property</BaseButton>
+      <BaseButton class="btn-desktop bg-secondary">List Your Property</BaseButton>
     </nav>
   </header>
 </template>
@@ -102,11 +102,11 @@ onMounted(() => {
 .logo-icon {
   width: 32px;
   height: 32px;
-  color: var(--alternative-color);
+  color: var(--secondary-color);
 }
 
 .logo-text span {
-  color: var(--alternative-color);
+  color: var(--secondary-color);
 }
 
 .navbar a {
@@ -193,7 +193,7 @@ onMounted(() => {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--alternative-color);
+    background: var(--secondary-color);
     transition: width 0.3s ease;
   }
 

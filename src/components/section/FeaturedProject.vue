@@ -55,7 +55,7 @@
     background-color: var(--white-color);
     border-radius: .75rem;
     padding: .5rem 0 .5rem 1rem;
-    border-left: 2px solid var(--secondary-color);
+    border-left: 2px solid var(--alternative-color);
     margin-bottom: 1rem;
 }
 

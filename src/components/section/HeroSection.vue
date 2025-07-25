@@ -3,15 +3,15 @@
     <section class="hero">
         <div class="overlaping">
             <div class="content">
-                <SubTitle class="text-secondary"> <i class="fa-solid fa-home"></i> Your Perfect Home</SubTitle>
+                <SubTitle class="text-alternative"> <i class="fa-solid fa-home"></i> Your Perfect Home</SubTitle>
                 <HeroTitle>Your Dream Home Awaits</HeroTitle>
                 <BaseParagraph>
                     Browse top properties in prime locations with guidance from verified agents. Find a place that truly
                     fits your lifestyle.
                 </BaseParagraph>
                 <div class="flex justify-center gap-1">
-                    <BaseButton class="bg-secondary">Browse Properties</BaseButton>
-                    <BaseButton class="bg-alternative">Learn More</BaseButton>
+                    <BaseButton class="bg-alternative">Browse Properties</BaseButton>
+                    <BaseButton class="bg-secondary">Learn More</BaseButton>
                 </div>
             </div>
         </div>
@@ -49,18 +49,17 @@
     border-radius: 1rem 0 1rem 0;
 }
 
-.hero .content .bg-alternative.btn {
+.hero .content .bg-secondary.btn {
     color: var(--primary-color);
 }
-
-.hero .content .bg-alternative.btn:hover {
+.hero .content .bg-secondary.btn:hover {
     color: var(--white-color);
     background-color: var(--primary-color);
 }
 
-.hero .content .bg-secondary.btn:hover {
+.hero .content .bg-alternative.btn:hover {
     color: var(--primary-color);
-    background-color: var(--alternative-color);
+    background-color: var(--secondary-color);
 }
 
 @media (min-width: 768px) {
@@ -68,11 +67,9 @@
         padding: 1.25rem 2rem;
         font-size: 1.25rem;
     }
-
     .hero .content {
         max-width: 70%;
     }
-
     .hero .content p {
         font-size: 1.15rem;
         margin: .75rem 0;

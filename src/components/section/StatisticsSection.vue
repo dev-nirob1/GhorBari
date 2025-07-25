@@ -44,7 +44,7 @@
   justify-content: center;
   gap: 1rem;
   padding: 2rem .5rem;
-  border: 1px solid var(--secondary-color);
+  border: 1px solid var(--alternative-color);
   border-radius: 2rem 0;
 }
 .statistics ul i {
@@ -53,8 +53,8 @@
   line-height: 80px;
   text-align: center;
   border-radius: 50%;
-  border: 1px dashed var(--secondary-color);
-  color: var(--secondary-color);
+  border: 1px dashed var(--alternative-color);
+  color: var(--alternative-color);
 }
 .statistics ul p {
   margin: 0;

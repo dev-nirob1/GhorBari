@@ -60,7 +60,7 @@ const cities = [
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: rgb(from var(--secondary-color) r g b / 40%);
+  background: rgb(from var(--alternative-color) r g b / 40%);
   color: var(--white-color);
   padding: 0.75rem;
   font-weight: 600;

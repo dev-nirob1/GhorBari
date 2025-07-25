@@ -95,11 +95,11 @@
 .footer .logo-icon {
   width: 32px;
   height: 32px;
-  color: var(--alternative-color);
+  color: var(--secondary-color);
 }
 
 .footer .logo-text span {
-  color: var(--alternative-color);
+  color: var(--secondary-color);
 }
 
 .footer .social-links {
@@ -117,13 +117,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--alternative-color);
+  background-color: var(--secondary-color);
   color: var(--primary-color);
   border-radius: .5rem 0 .5rem 0;
 }
 
 .footer .footer-links a:hover {
-  color: var(--alternative-color);
+  color: var(--secondary-color);
 }
 
 .footer .social-links a:hover i {
@@ -138,7 +138,7 @@
   bottom: 0;
   width: 4rem;
   height: 3px;
-  background-color: var(--alternative-color);
+  background-color: var(--secondary-color);
 }
 
 .footer ul {
@@ -161,7 +161,7 @@
 .footer ul a::before {
   content: ">";
   font-family: monospace;
-  color: var(--alternative-color);
+  color: var(--secondary-color);
   transition: all 0.3s ease;
 }
 
@@ -182,7 +182,7 @@
 
 .footer .subscribe-form .btn {
   padding: 1rem 2rem;
-  background-color: var(--alternative-color);
+  background-color: var(--secondary-color);
   color: var(--primary-color);
   border: none;
   border-radius: 0 0 1rem 0;
@@ -193,7 +193,7 @@
   padding: .5rem;
   border-top: var(--white-color);
   text-align: center;
-  background-color: rgb(from var(--alternative-color)r g b / 5%);
+  background-color: rgb(from var(--secondary-color)r g b / 5%);
 }
 
 .footer .footer-bottom a {
